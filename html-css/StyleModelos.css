@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #0d2635;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #1A5276;
+  padding: 2vh 4vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo img {
+  height: 5vh;
+  margin-right: 2vw;
+}
+
+.title h1 {
+  font-family: "Lexend", sans-serif;
+  color: #F7DC6F;
+  margin: 0;
+  font-size: 4vh;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1.5vw;
+}
+
+nav a {
+  font-family: "Josefin Sans", serif;
+  color: #F7DC6F;
+  text-decoration: none;
+  font-size: 2.9vh;
+}
+
+.modelo-button {
+  background-color: #F7DC6F;
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.modelo-button button:hover {
+  transform: scale(1.05);
+}
+
+.modelos {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.modelos h2 {
+  margin-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.grid-modelos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  justify-content: center;
+}
+
+.modelo {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: none;
+  transition: transform 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modelo img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.modelo h3 {
+  font-family: "lexend", sans-serif;
+  font-size: 24px;
+  color: #333;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.tecnologia,
+footer {
+  padding: 30px 10px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
+
+.tecnologia h2,
+footer p {
+  font-size: 18px;
+  color: #bbb;
+}
+
+footer p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .title {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    gap: 2.9vw;
+  }
+
+  nav li {
+    margin: 0 0.5vw;
+  }
+
+  nav a {
+    font-size: 1.5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    margin: 0 0.2vw;
+  }
+
+  nav a {
+    font-size: 1.2vh;
+  }
+}

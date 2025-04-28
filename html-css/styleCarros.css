@@ -1,0 +1,138 @@
+body {
+  margin: 0 10vw;
+  padding: 0 10vw;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0d2635;
+  color: white;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #1A5276;
+  padding: 2vh 4vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.logo img {
+  height: 5vh;
+  margin-right: 2vw;
+}
+
+.title h1 {
+  font-family: "Lexend", sans-serif;
+  color: #F7DC6F;
+  margin: 0;
+  font-size: 4vh;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1.5vw;
+}
+
+nav a {
+  font-family: "Josefin Sans", serif;
+  color: #F7DC6F;
+  text-decoration: none;
+  font-size: 2.9vh;
+}
+
+nav a:hover {
+  color: #D4AC0D;
+}
+
+.titulo {
+  font-family: "Josefin Sans", sans-serif;
+  color: #D4AC0D;
+  font-size: 5vh;
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  overflow: visible;
+  border-radius: 1vw;
+  border-color: yellow;
+}
+
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+  color: #F7DC6F;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.description {
+  font-size: 2.4vh;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+footer {
+  width: 100vw;
+  margin-left: -20vw;
+  padding: 30px 10px;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+footer p {
+  font-size: 14px;
+  color: #bbb;
+}
+
+@media (max-width: 768px) {
+  .title {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+    gap: 2.9vw;
+  }
+
+  nav li {
+    margin: 0 0.5vw;
+  }
+
+  nav a {
+    font-size: 1.5vh;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  nav li {
+    margin: 0 0.2vw;
+  }
+
+  nav a {
+    font-size: 1.2vh;
+  }
+}

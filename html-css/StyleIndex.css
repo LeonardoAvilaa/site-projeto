@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #0d2635;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #1A5276;
+    padding: 2vh 4vw;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo img {
+    height: 5vh;
+    margin-right: 2vw;
+}
+
+.title h1 {
+    font-family: "Lexend", sans-serif;
+    color: #F7DC6F;
+    margin: 0;
+    font-size: 4vh;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+nav {
+    margin-left: auto;
+    ;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 1.5vw;
+}
+
+nav a {
+    font-family: "Josefin Sans", serif;
+    color: #F7DC6F;
+    text-decoration: none;
+    font-size: 2.9vh;
+}
+
+nav a:hover {
+    color: #D4AC0D;
+}
+
+.hero {
+    background-image: url('imagens/Zeno/Zeno-BackAbove.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-family: "Lexend", sans-serif;
+    text-shadow: 1px 1px 10px #000000;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    text-shadow: 1px 1px 10px #000000;
+    ;
+    color: #fefefe;
+    font-family: "Josefin Sans", serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #002f66;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #000000;
+}
+
+.modelos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.modelos h2 {
+    font-family: "Lexend", sans-serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.modelo {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modelo h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.modelo p {
+    font-size: 16px;
+    color: #666;
+}
+
+.modelo-button {
+    transition: transform 0.3s;
+    margin: 20px;
+    display: inline-block;
+}
+
+.modelo-button button {
+    background-color: #F7DC6F;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.modelo-button button:hover {
+    transform: scale(1.05);
+}
+
+.modelo-button img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.modelo-button h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.modelo-button p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.modelo-button a {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-items: center;
+}
+
+.tecnologia,
+footer {
+    padding: 30px 10px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.tecnologia h2,
+footer p {
+    font-size: 18px;
+    color: #bbb;
+}
+
+footer p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+@media (max-width: 768px) {
+    .title {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        display: flex;
+        gap: 2.9vw;
+    }
+
+    nav li {
+        margin: 0 0.5vw;
+    }
+
+    nav a {
+        font-size: 1.5vh;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        margin: 0 0.2vw;
+    }
+
+    nav a {
+        font-size: 1.2vh;
+    }
+
+
+}
